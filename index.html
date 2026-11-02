@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia – II Wojna Światowa (1939–1943) | Notatka & Fiszki</title>
+  <style>
+    :root {
+      --bg: #0f141c;
+      --card-bg: #18202c;
+      --card-border: #293548;
+      --accent: #f59e0b;
+      --accent-glow: rgba(245, 158, 11, 0.25);
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.25);
+      --success: #10b981;
+      --danger: #ef4444;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(180deg, #161f2e 0%, #0f141c 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 1.5rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .logo-area h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #fbbf24, #f87171);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-area p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+      background: rgba(15, 20, 28, 0.8);
+      padding: 0.35rem;
+      border-radius: 9999px;
+      border: 1px solid var(--card-border);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 0 4rem;
+    }
+
+    /* SEARCH BAR */
+    .search-box {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    /* BADGES */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-pencil {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .badge-highlight {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge-exam {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    /* SECTION / NOTATKA VIEW */
+    .note-section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .note-section:hover {
+      border-color: #3b4d66;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      color: #f8fafc;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .section-body ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .section-body li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .section-body li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .section-body strong {
+      color: #fde047;
+    }
+
+    .callout-box {
+      background: rgba(30, 41, 59, 0.8);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+    }
+
+    /* FISZKI (FLASHCARDS) VIEW */
+    #fiszki-view {
+      display: none;
+    }
+
+    .fc-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    .fc-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .btn-filter {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .btn-filter.active, .btn-filter:hover {
+      background: var(--accent);
+      color: #111827;
+      border-color: var(--accent);
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #38bdf8, #10b981);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* 3D FLIP CARD */
+    .flashcard-wrapper {
+      perspective: 1200px;
+      min-height: 320px;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+    }
+
+    .flashcard {
+      width: 100%;
+      min-height: 320px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .flashcard.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 2px solid var(--card-border);
+    }
+
+    .card-front {
+      background: linear-gradient(145deg, #1e293b, #111827);
+    }
+
+    .card-back {
+      background: linear-gradient(145deg, #172554, #0f172a);
+      border-color: #3b82f6;
+      transform: rotateY(180deg);
+    }
+
+    .card-tag {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+    }
+
+    .card-counter {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .card-front-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #f8fafc;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .card-hint {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 1rem;
+      opacity: 0.7;
+    }
+
+    .card-back-text {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      max-width: 650px;
+    }
+
+    .card-back-text strong {
+      color: #fde047;
+    }
+
+    .fc-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-action {
+      padding: 0.85rem 1.75rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn-prev, .btn-next {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+    }
+
+    .btn-prev:hover, .btn-next:hover {
+      background: #273549;
+    }
+
+    .btn-review {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .btn-review:hover {
+      background: #ef4444;
+      color: white;
+    }
+
+    .btn-known {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-known:hover {
+      background: #10b981;
+      color: white;
+    }
+
+    /* QUIZ VIEW */
+    #quiz-view {
+      display: none;
+    }
+
+    .quiz-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-question {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: #f8fafc;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .quiz-opt-btn {
+      text-align: left;
+      padding: 1rem 1.25rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .quiz-opt-btn:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--primary);
+    }
+
+    .quiz-opt-btn.correct {
+      background: rgba(16, 185, 129, 0.2) !important;
+      border-color: var(--success) !important;
+      color: #34d399;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: rgba(239, 68, 68, 0.2) !important;
+      border-color: var(--danger) !important;
+      color: #f87171;
+    }
+
+    .quiz-explanation {
+      margin-top: 1rem;
+      padding: 0.85rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: rgba(15, 20, 28, 0.8);
+      border-left: 3px solid var(--primary);
+      display: none;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      background: #0b0f15;
+    }
+
+    .shortcuts-hint {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    kbd {
+      background: #222e3e;
+      border: 1px solid #3b4d66;
+      border-radius: 4px;
+      padding: 0.15rem 0.4rem;
+      font-size: 0.75rem;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <div class="logo-area">
+        <h1>🎖️ Historia – II Wojna Światowa (1939–1943)</h1>
+        <p>Notatka sprawdzianowa • Podkreślenia & dopiski ołówkiem • Fiszki & Quiz</p>
+      </div>
+      <nav class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('notatki')">📖 Notatka</button>
+        <button class="tab-btn" onclick="switchTab('fiszki')">🗂️ Fiszki (<span id="fc-total-badge">0</span>)</button>
+        <button class="tab-btn" onclick="switchTab('quiz')">🎯 Test wiedzy</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ================= NOTATKI VIEW ================= -->
+    <div id="notatki-view">
+      <div class="search-box">
+        <input type="text" id="noteSearch" class="search-input" placeholder="🔍 Szukaj w notatce (np. Maginota, Barbarossa, Vichy, Enigma, Quisling)..." oninput="filterNotes()">
+      </div>
+
+      <!-- SEKCJA 1 -->
+      <section class="note-section" data-keywords="pakt ribbentrop mołotow granice przyjaźń podział strefy wpływów narew wisła san litwa besarabia zssr niemcy">
+        <div class="section-header">
+          <div class="section-title">
+            <span>🤝</span> 1. Pakt Ribbentrop-Mołotow i traktat o granicach (1939)
+          </div>
+          <span class="badge badge-exam">Pewniak na test</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>23 sierpnia 1939 r.</strong> – podpisanie paktu Ribbentrop-Mołotow o nieagresji z <strong>tajnym protokołem</strong> dzielącym Europę Środkowo-Wschodnią.</li>
+            <li><strong>Pierwotny podział Polski:</strong> granica wzdłuż rzek <strong>Narew – Wisła – San</strong>. Strefa sowiecka: Finlandia, Estonia, Łotwa i Besarabia; niemiecka: Litwa.</li>
+            <li><strong>28 września 1939 r. – niemiecko-sowiecki traktat o granicach i przyjaźni:</strong>
+              korekta granic po upadku Polski. ZSRS zrezygnował z Lubelszczyzny i wschodniego Mazowsza (Suwalszczyzny) na rzecz III Rzeszy, otrzymując w zamian <strong>Litwę</strong> do swojej strefy wpływów.</li>
+            <li><strong>Współpraca Gestapo i NKWD:</strong> tajne narady i współdziałanie służb w bezwzględnym zwalczaniu polskiego ruchu oporu i podziemia.</li>
+            <li><strong>Aneksje ZSRS w 1940 r.:</strong> w czerwcu 1940 wchłonięcie <strong>Litwy, Łotwy i Estonii</strong> jako republik radzieckich; w sierpniu wymuszenie na Rumunii oddania <strong>Besarabii i północnej Bukowiny</strong>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 2 -->
+      <section class="note-section" data-keywords="wojna zimowa finlandia mannerheim linia mannerheima wyborg stalin liga narodów">
+        <div class="section-header">
+          <div class="section-title">
+            <span>❄️</span> 2. Wojna zimowa z Finlandią (1939–1940)
+          </div>
+          <span class="badge badge-highlight">Podkreślone w podręczniku</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>30 listopada 1939 r.</strong> – Armia Czerwona uderza na Finlandię (po odrzuceniu przez Finów żądań przesunięcia granicy na Przesmyku Karelskim).</li>
+            <li><strong>Carl Gustaf Mannerheim</strong> – marszałek Finlandii, legendarny wódz obrony kraju; twórca pasa fortyfikacji granicznych zwanego <strong>Linią Mannerheima</strong>.</li>
+            <li><strong>Taktyka „Śmierć w śniegu”:</strong> doskonale zamaskowani w białych kombinezonach fińscy strzelcy wyborowi na nartach dziesiątkowali nieprzygotowane sowieckie kolumny.</li>
+            <li><strong>Skutki:</strong> traktat w Moskwie (13 marca 1940 r.) – Finlandia oddała ZSRS ponad 10% terytorium (w tym miasto Wyborg) i umocnienia, lecz <strong>obroniła suwerenność</strong>.</li>
+            <li><strong>Konsekwencje polityczne:</strong> wykluczenie ZSRS z Ligi Narodów oraz obnażenie przed Hitlerem słabości Armii Czerwonej po czystkach stalinowskich.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 3 -->
+      <section class="note-section" data-keywords="dania norwegia skandynawia narwik podhalanie quisling alianci szwecja ruda żelaza">
+        <div class="section-header">
+          <div class="section-title">
+            <span>⚓</span> 3. Podbój Danii i Norwegii (kwiecień 1940)
+          </div>
+          <span class="badge badge-highlight">Podkreślone</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>9 kwietnia 1940 r.</strong> – zsynchronizowany atak Niemiec na <strong>Danię i Norwegię</strong> (cel: zabezpieczenie dostaw szwedzkiej rudy żelaza oraz zdobycie portów do zwalczania brytyjskiej floty).</li>
+            <li><strong>Dania:</strong> skapitulowała w pierwszym dniu inwazji bez walki (zyskała status protektoratu).</li>
+            <li><strong>Norwegia:</strong> podjęła zaciętą walkę z pomocą aliantów brytyjskich, francuskich i polskich.</li>
+            <li><strong>Bitwa o Narwik (1940):</strong> walki o port przeładunkowy rudy; wielki sukces polskiej <strong>Samodzielnej Brygady Strzelców Podhalańskich</strong>.</li>
+            <li><strong>Vidkun Quisling:</strong> lider norweskich faszystów, stanął na czele kolaboracyjnego rządu po ucieczce króla; jego nazwisko do dziś oznacza <strong>zdrajcę i kolaboranta</strong>.</li>
+            <li><strong>Definicja Alianci:</strong> koalicja państw walczących przeciwko państwom Osi (III Rzeszy, Włochom, Japonii).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 4 -->
+      <section class="note-section" data-keywords="francja beneluks belgia holandia luksemburg linia maginota ardeny dunkierka compiegne vichy petain de gaulle wolna francja degrelle">
+        <div class="section-header">
+          <div class="section-title">
+            <span>🗼</span> 4. Podbój Beneluksu i Francji (maj – czerwiec 1940)
+          </div>
+          <span class="badge badge-pencil">✏️ Dopisane ołówkiem</span>
+        </div>
+        <div class="section-body">
+          <div class="callout-box">
+            <strong>✏️ Dopisane ołówkiem: Linia Maginota</strong><br>
+            Francuski, potężny system nowoczesnych żelbetowych fortyfikacji wzdłuż granicy z Niemcami. Niemcy całkowicie go <strong>ominęli</strong>, forsując czołgami góry <strong>Ardenów</strong> w Belgii i wychodząc prosto na tyły wojsk alianckich.
+          </div>
+          <ul>
+            <li><strong>10 maja 1940 r.</strong> – uderzenie Wehrmachtu na kraje Beneluksu (Belgię, Holandię, Luksemburg) oraz Francję.</li>
+            <li><strong>Ewakuacja pod Dunkierką (operacja Dynamo):</strong> odcięte wojska brytyjsko-francuskie ewakuowano morzem na wyspy (ponad 300 tys. żołnierzy ocalonych kosztem porzucenia sprzętu).</li>
+            <li><strong>22 czerwca 1940 r. – rozejm w Compiègne:</strong> kapitulację Francji podpisano w tym samym wagonie kolejowym, co klęskę Niemiec w 1918 r. (osobisty rewanż Hitlera).</li>
+            <li><strong>Podział Francji:</strong>
+              <br>• Północ i wybrzeże Atlantyku – bezpośrednia okupacja niemiecka.
+              <br>• Południe – marionetkowe <strong>Państwo Vichy</strong> z autorytarnym, kolaboracyjnym rządem marszałka <strong>Philippe’a Pétaina</strong>.</li>
+            <li><strong>Gen. Charles de Gaulle:</strong> ewakuował się do Londynu, utworzył <strong>Komitet Wolna Francja</strong> i kontynuował walkę z okupantem u boku Wielkiej Brytanii.</li>
+            <li><strong>Léon Degrelle:</strong> wódz belgijskich faszystów (reksistów), symbol zdrady i kolaboracji w Belgii, oficer Waffen-SS.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 5 -->
+      <section class="note-section" data-keywords="bitwa o anglię raf churchill radar enigma polacy dywizjon 303 lend lease act stany zjednoczone">
+        <div class="section-header">
+          <div class="section-title">
+            <span>✈️</span> 5. Bitwa o Anglię i wsparcie USA (1940–1941)
+          </div>
+          <span class="badge badge-highlight">Podkreślone</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>Lipiec – październik 1940 r. – Bitwa o Anglię:</strong> pierwsza wyłącznie powietrzna batalia II wojny. Zakończona <strong>klęską Luftwaffe</strong> i rezygnacją Hitlera z inwazji na Wyspy.</li>
+            <li><strong>Winston Churchill:</strong> premier Wielkiej Brytanii od maja 1940 r., odrzucił kompromisy z Hitlerem (*„Nigdy w historii wojen tak wielu nie zawdzięczało tak wiele tak nielicznym”*).</li>
+            <li><strong>3 filary brytyjskiego zwycięstwa (RAF):</strong>
+              <br>1. <strong>Radar</strong> – rewolucyjny wynalazek dający wczesne ostrzeganie o niemieckich nalotach.
+              <br>2. <strong>Piloci z innych krajów</strong> – w tym polscy lotnicy z <strong>Dywizjonów 302 i 303</strong> (zestrzelili ok. 170 samolotów wroga).
+              <br>3. <strong>Złamanie Enigmy</strong> – dzięki polskim matematykom alianci czytali ściśle tajne niemieckie rozkazy.</li>
+            <li><strong>Lend-Lease Act (marzec 1941 r.):</strong> ustawa Kongresu USA pozwalająca prezydentowi pożyczać lub dzierżawić broń i surowce krajom walczącym z państwami Osi (kluczowa pomoc dla Wlk. Brytanii i ZSRS).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 6 -->
+      <section class="note-section" data-keywords="wojna bałkany grecja jugosławia ustasze czetnicy tito chorwacja serbia włochy">
+        <div class="section-header">
+          <div class="section-title">
+            <span>⛰️</span> 6. Wojna na Bałkanach (1940–1941)
+          </div>
+          <span class="badge badge-highlight">Podkreślone</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>Jesień 1940 r.</strong> – Mussolini (Włochy) atakuje Grecję i ponosi kompromitującą porażkę; Hitler musi interweniować.</li>
+            <li><strong>Kwiecień 1941 r.</strong> – atak Niemiec i ich satelitów (Węgier, Rumunii, Bułgarii) na <strong>Grecję i Jugosławię</strong>.
+              <br>⚠️ <strong>Ważny skutek:</strong> opóźnienie ataku na ZSRS z maja na koniec czerwca 1941 r. (niemieckie wojska pod Moskwą zaskoczyła zima).</li>
+            <li><strong>Niezależne Państwo Chorwackie (NDH) i Ustasze:</strong> marionetkowe państwo faszystowskie; ustasze dopuścili się potwornych zbrodni i czystek etnicznych na Serbach i Żydach.</li>
+            <li><strong>Partyzantka w Jugosławii:</strong>
+              <br>• <strong>Czetnicy</strong> – serbscy nacjonaliści i monarchiści.
+              <br>• <strong>Komuniści Josipa Broz-Tito</strong> – zjednoczyli walkę wielu narodowości, zyskali przewagę i poparcie aliantów.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEKCJA 7 -->
+      <section class="note-section" data-keywords="front wschodni barbarossa lebensraum moskwa leningrad droga życia stalingrad paulus łuk kurski 1941 1942 1943">
+        <div class="section-header">
+          <div class="section-title">
+            <span>🛡️</span> 7. Front wschodni: Napaść na ZSRS i punkty zwrotne (1941–1943)
+          </div>
+          <span class="badge badge-pencil">✏️ Dopisane ołówkiem</span>
+        </div>
+        <div class="section-body">
+          <ul>
+            <li><strong>Lebensraum:</strong> hitlerowska idea zdobycia na wschodzie „przestrzeni życiowej” i eksterminacji miejscowej ludności.</li>
+            <li><strong>Plan „Barbarossa” (22 czerwca 1941 r.):</strong> atak Niemiec i sojuszników na ZSRS; początek zgubnej dla Rzeszy <strong>wojny na dwa fronty</strong>. Do niewoli trafiło ok. 3,5 mln zaskoczonych żołnierzy Armii Czerwonej.</li>
+            <li><strong>Obrona Moskwy (kontrofensywa 6 grudnia 1941 r.):</strong> pierwsze wielkie lądowe załamanie niemieckiego Blitzkriegu.</li>
+            <li><strong>Blokada Leningradu (wrzesień 1941 – styczeń 1944):</strong> oblężenie trwało blisko <strong>900 dni</strong>; głód zabił niemal 1 mln cywilów.
+              <br>• <strong>„Droga życia”:</strong> jedyny szlak aprowizacyjny i ewakuacyjny ciężarówkami przez lód zamarzniętego <strong>jeziora Ładoga</strong>.</li>
+            <li><strong>Bitwa pod Stalingradem (23 VIII 1942 – 2 lutego 1943 r.):</strong> okrążenie i kapitulacja 6. Armii feldmarszałka Paulusa (90 tys. jeńców). <strong>Przełomowy punkt zwrotny II wojny światowej</strong> – Wehrmacht traci bezpowrotnie inicjatywę.</li>
+          </ul>
+          <div class="callout-box">
+            <strong>✏️ Dopisane ołówkiem: Bitwa na Łuku Kurskim (lipiec – sierpień 1943 r.)</strong><br>
+            Największa bitwa pancerna w historii świata (m.in. pod Prochorowką). Klęska operacji „Cytadela” oznaczała definitywny koniec jakichkolwiek niemieckich działań zaczepnych na froncie wschodnim.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= FISZKI VIEW ================= -->
+    <div id="fiszki-view">
+      
+      <div class="fc-controls">
+        <div class="fc-filters">
+          <button class="btn-filter active" onclick="setFilter('all')">Wszystkie (<span id="count-all">0</span>)</button>
+          <button class="btn-filter" onclick="setFilter('pencil')">✏️ Ołówek (<span id="count-pencil">0</span>)</button>
+          <button class="btn-filter" onclick="setFilter('dates')">📅 Daty (<span id="count-dates">0</span>)</button>
+          <button class="btn-filter" onclick="setFilter('people')">👤 Postacie (<span id="count-people">0</span>)</button>
+          <button class="btn-filter" onclick="setFilter('terms')">💡 Pojęcia (<span id="count-terms">0</span>)</button>
+          <button class="btn-filter" onclick="setFilter('review')">🔄 Do powtórki (<span id="count-review">0</span>)</button>
+        </div>
+        <div>
+          <button class="btn-filter" onclick="shuffleCards()">🔀 Przetasuj</button>
+          <button class="btn-filter" onclick="resetProgress()">↺ Resetuj</button>
+        </div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div id="fcProgressBar" class="progress-bar-fill"></div>
+      </div>
+
+      <!-- KARTA -->
+      <div class="flashcard-wrapper" onclick="flipCard()">
+        <div class="flashcard" id="activeCard">
+          <div class="card-face card-front">
+            <span class="card-tag" id="cardTag"></span>
+            <span class="card-counter" id="cardCounter">1 / 1</span>
+            <div class="card-front-title" id="cardFront">Kliknij, aby zacząć</div>
+            <div class="card-hint">Kliknij lub naciśnij [Spację], aby odkryć odpowiedź</div>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-tag">ODPOWIEDŹ</span>
+            <div class="card-back-text" id="cardBack">Odpowiedź</div>
+            <div class="card-hint">Kliknij ponownie, aby odwrócić</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRZYCISKI AKCJI -->
+      <div class="fc-actions">
+        <button class="btn-action btn-prev" onclick="prevCard(event)">⬅️ Poprzednia</button>
+        <button class="btn-action btn-review" onclick="markCard(false, event)">❌ Do powtórki [2]</button>
+        <button class="btn-action btn-known" onclick="markCard(true, event)">✅ Umiem! [1]</button>
+        <button class="btn-action btn-next" onclick="nextCard(event)">Następna ➡️</button>
+      </div>
+
+      <div class="shortcuts-hint">
+        Skróty klawiszowe: <kbd>Spacja</kbd> lub <kbd>Enter</kbd> = Obróć | <kbd>←</kbd> / <kbd>→</kbd> = Poprzednia / Następna | <kbd>1</kbd> = Umiem | <kbd>2</kbd> = Powtórz
+      </div>
+    </div>
+
+    <!-- ================= QUIZ VIEW ================= -->
+    <div id="quiz-view">
+      <div style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+        <h2>🎯 Sprawdź się przed klasówką</h2>
+        <span id="quiz-score" style="font-weight: 700; color: #38bdf8;">Wynik: 0 / 10</span>
+      </div>
+      <div id="quiz-container"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      Reprezentacja materiału z podręcznika historii • Przygotowane do repozytorium <strong>Historia</strong>
+    </div>
+  </footer>
+
+  <script>
+    // BAZA FISZEK
+    const allFlashcards = [
+      {
+        front: "Linia Maginota",
+        back: "Francuski potężny system umocnień wzdłuż granicy z Niemcami. Niemcy całkowicie go ominąwszy, uderzyli pancernie przez górzyste lasy Ardenów w Belgii.",
+        category: "pencil",
+        tag: "✏️ Ołówek"
+      },
+      {
+        front: "Bitwa na Łuku Kurskim (1943)",
+        back: "Największa bitwa pancerna w dziejach (lipiec–sierpień 1943 r.). Ostateczne załamanie niemieckiej inicjatywy zaczepnej na froncie wschodnim.",
+        category: "pencil",
+        tag: "✏️ Ołówek"
+      },
+      {
+        front: "Plan „Barbarossa” – Data i cel",
+        back: "22 czerwca 1941 r. – niespodziewana inwazja Niemiec i sojuszników na ZSRS. Realizacja koncepcji Lebensraum (przestrzeni życiowej).",
+        category: "dates",
+        tag: "📅 Data & Plan"
+      },
+      {
+        front: "Vidkun Quisling",
+        back: "Przywódca norweskich faszystów, który po ataku Niemiec stanął na czele rządu marionetkowego. Międzynarodowy symbol zdrady i kolaboracji.",
+        category: "people",
+        tag: "👤 Postać"
+      },
+      {
+        front: "Państwo Vichy",
+        back: "Marionetkowe, autorytarne państwo na południu Francji ze stolicą w Vichy, zależne od III Rzeszy. Na czele stanął marszałek Philippe Pétain.",
+        category: "terms",
+        tag: "💡 Pojęcie"
+      },
+      {
+        front: "Gen. Charles de Gaulle",
+        back: "Francuski generał, który po kapitulacji Francji stanął w Londynie na czele Komitetu Wolna Francja, kontynuując walkę u boku aliantów.",
+        category: "people",
+        tag: "👤 Postać"
+      },
+      {
+        front: "Bitwa pod Stalingradem – Czas i znaczenie",
+        back: "23 VIII 1942 – 2 II 1943 r. Klęska i kapitulacja 6. Armii gen. Paulusa. Główny punkt zwrotny II wojny światowej na korzyść koalicji antyhitlerowskiej.",
+        category: "dates",
+        tag: "📅 Data"
+      },
+      {
+        front: "„Droga życia” (Leningrad)",
+        back: "Szlak zaopatrzeniowy i ewakuacyjny wiodący po lodzie zamarzniętego jeziora Ładoga, ratujący głodujących mieszkańców oblężonego Leningradu.",
+        category: "terms",
+        tag: "💡 Pojęcie"
+      },
+      {
+        front: "3 powody sukcesu RAF w bitwie o Anglię",
+        back: "1. Użycie radaru do wczesnego ostrzegania.<br>2. Piloci zagraniczni (w tym Polacy z Dywizjonu 303 i 302).<br>3. Złamanie szyfru Enigmy przez Polaków.",
+        category: "terms",
+        tag: "💡 Kluczowe"
+      },
+      {
+        front: "Lend-Lease Act (marzec 1941)",
+        back: "Ustawa Kongresu USA umożliwiająca pożyczanie i przekazywanie sprzętu wojskowego oraz surowców państwom walczącym z państwami Osi.",
+        category: "terms",
+        tag: "💡 Pojęcie"
+      },
+      {
+        front: "Carl Gustaf Mannerheim",
+        back: "Marszałek Finlandii, dowodził bohaterską obroną kraju w czasie wojny zimowej (1939–1940) przeciw agresji sowieckiej. Twórca Linii Mannerheima.",
+        category: "people",
+        tag: "👤 Postać"
+      },
+      {
+        front: "Wojna zimowa (daty i skutki)",
+        back: "30 XI 1939 – 13 III 1940 r. ZSRS zajął 10% ziem Finlandii (Wyborg), ale Finlandia ocaliła suwerenność. ZSRS wykluczono z Ligi Narodów, a Armia Czerwona ukazała słabość.",
+        category: "dates",
+        tag: "📅 Data"
+      },
+      {
+        front: "Traktat o granicach i przyjaźni (28 IX 1939)",
+        back: "Korekta paktu Ribbentrop-Mołotow: ZSRS oddał Niemcom Lubelszczyznę i wschodnie Mazowsze, otrzymując w zamian Litwę do swojej strefy wpływów.",
+        category: "dates",
+        tag: "📅 Data"
+      },
+      {
+        front: "Ustasze",
+        back: "Chorwaccy skrajni faszyści rządzący marionetkowym Niezależnym Państwem Chorwackim (NDH), odpowiedzialni za ludobójstwo Serbów i Żydów.",
+        category: "terms",
+        tag: "💡 Pojęcie"
+      },
+      {
+        front: "Josip Broz-Tito",
+        back: "Dowódca wielonarodowej komunistycznej partyzantki w Jugosławii, który wywalczył dominację w kraju i uzyskał militarne poparcie aliantów.",
+        category: "people",
+        tag: "👤 Postać"
+      },
+      {
+        front: "Rozejm w Compiègne (22 VI 1940)",
+        back: "Zawieszenie broni i upadek Francji, podpisane w tym samym wagonie kolejowym, w którym Niemcy skapitulowali w 1918 r. (rewanż Hitlera).",
+        category: "dates",
+        tag: "📅 Data"
+      },
+      {
+        front: "Bitwa o Narwik (1940)",
+        back: "Walki o strategiczny norweski port rudy żelaza, w których wsławiła się polska Samodzielna Brygada Strzelców Podhalańskich.",
+        category: "terms",
+        tag: "💡 Bitwa"
+      },
+      {
+        front: "Czetnicy",
+        back: "Serbscy partyzanci o charakterze nacjonalistycznym i monarchistycznym (zwolennicy króla Jugosławii), rywalizujący z komunistami Tito.",
+        category: "terms",
+        tag: "💡 Pojęcie"
+      },
+      {
+        front: "Skutek wojny na Bałkanach dla planu Barbarossa",
+        back: "Konieczność ratowania Włoch w Grecji i zajęcie Jugosławii opóźniły inwazję na ZSRS o ponad miesiąc, przez co Wehrmacht zastała zima pod Moskwą.",
+        category: "terms",
+        tag: "💡 Przyczyna-Skutek"
+      },
+      {
+        front: "Léon Degrelle",
+        back: "Lider belgijskich faszystów (reksistów), kolaborant i dowódca walońskiej jednostki Waffen-SS.",
+        category: "people",
+        tag: "👤 Postać"
+      }
+    ];
+
+    // STAN FISZEK
+    let currentFilter = 'all';
+    let cardList = [...allFlashcards];
+    let currentIndex = 0;
+    let isFlipped = false;
+    let knownCards = new Set();
+    let reviewCards = new Set();
+
+    function initFlashcards() {
+      document.getElementById('fc-total-badge').textContent = allFlashcards.length;
+      document.getElementById('count-all').textContent = allFlashcards.length;
+      document.getElementById('count-pencil').textContent = allFlashcards.filter(c => c.category === 'pencil').length;
+      document.getElementById('count-dates').textContent = allFlashcards.filter(c => c.category === 'dates').length;
+      document.getElementById('count-people').textContent = allFlashcards.filter(c => c.category === 'people').length;
+      document.getElementById('count-terms').textContent = allFlashcards.filter(c => c.category === 'terms').length;
+      updateReviewCount();
+      renderCard();
+    }
+
+    function updateReviewCount() {
+      document.getElementById('count-review').textContent = reviewCards.size;
+    }
+
+    function setFilter(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (filter === 'all') cardList = [...allFlashcards];
+      else if (filter === 'review') cardList = allFlashcards.filter(c => reviewCards.has(c.front));
+      else cardList = allFlashcards.filter(c => c.category === filter);
+
+      if (cardList.length === 0) {
+        if (filter === 'review') {
+          alert("Brak kart do powtórki! Świetna robota.");
+          setFilter('all');
+          return;
+        }
+      }
+
+      currentIndex = 0;
+      isFlipped = false;
+      renderCard();
+    }
+
+    function shuffleCards() {
+      for (let i = cardList.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cardList[i], cardList[j]] = [cardList[j], cardList[i]];
+      }
+      currentIndex = 0;
+      isFlipped = false;
+      renderCard();
+    }
+
+    function resetProgress() {
+      knownCards.clear();
+      reviewCards.clear();
+      updateReviewCount();
+      setFilter('all');
+    }
+
+    function renderCard() {
+      const cardEl = document.getElementById('activeCard');
+      cardEl.classList.remove('flipped');
+      isFlipped = false;
+
+      if (cardList.length === 0) {
+        document.getElementById('cardFront').textContent = "Brak fiszek w tej kategorii";
+        document.getElementById('cardBack').textContent = "";
+        document.getElementById('cardCounter').textContent = "0 / 0";
+        return;
+      }
+
+      const card = cardList[currentIndex];
+      document.getElementById('cardFront').innerHTML = card.front;
+      document.getElementById('cardBack').innerHTML = card.back;
+      document.getElementById('cardTag').textContent = card.tag || 'POJĘCIE';
+      document.getElementById('cardCounter').textContent = `${currentIndex + 1} / ${cardList.length}`;
+
+      const progress = ((currentIndex + 1) / cardList.length) * 100;
+      document.getElementById('fcProgressBar').style.width = `${progress}%`;
+    }
+
+    function flipCard() {
+      const cardEl = document.getElementById('activeCard');
+      isFlipped = !isFlipped;
+      cardEl.classList.toggle('flipped', isFlipped);
+    }
+
+    function nextCard(e) {
+      if (e) e.stopPropagation();
+      if (currentIndex < cardList.length - 1) {
+        currentIndex++;
+        renderCard();
+      } else {
+        currentIndex = 0;
+        renderCard();
+      }
+    }
+
+    function prevCard(e) {
+      if (e) e.stopPropagation();
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderCard();
+      } else {
+        currentIndex = cardList.length - 1;
+        renderCard();
+      }
+    }
+
+    function markCard(known, e) {
+      if (e) e.stopPropagation();
+      const current = cardList[currentIndex];
+      if (known) {
+        knownCards.add(current.front);
+        reviewCards.delete(current.front);
+      } else {
+        reviewCards.add(current.front);
+        knownCards.delete(current.front);
+      }
+      updateReviewCount();
+      nextCard();
+    }
+
+    // KLAWIATURA
+    window.addEventListener('keydown', (e) => {
+      const fiszkiView = document.getElementById('fiszki-view');
+      if (fiszkiView.style.display !== 'block') return;
+
+      if (e.code === 'Space' || e.code === 'Enter') {
+        e.preventDefault();
+        flipCard();
+      } else if (e.code === 'ArrowRight') {
+        nextCard();
+      } else if (e.code === 'ArrowLeft') {
+        prevCard();
+      } else if (e.key === '1') {
+        markCard(true);
+      } else if (e.key === '2') {
+        markCard(false);
+      }
+    });
+
+    // TABS
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      document.getElementById('notatki-view').style.display = tabId === 'notatki' ? 'block' : 'none';
+      document.getElementById('fiszki-view').style.display = tabId === 'fiszki' ? 'block' : 'none';
+      document.getElementById('quiz-view').style.display = tabId === 'quiz' ? 'block' : 'none';
+
+      if (tabId === 'fiszki') {
+        renderCard();
+      }
+    }
+
+    // WYSZUKIWARKA
+    function filterNotes() {
+      const q = document.getElementById('noteSearch').value.toLowerCase().trim();
+      const sections = document.querySelectorAll('.note-section');
+      sections.forEach(sec => {
+        const text = (sec.getAttribute('data-keywords') + " " + sec.innerText).toLowerCase();
+        sec.style.display = text.includes(q) ? 'block' : 'none';
+      });
+    }
+
+    // QUIZ DATA
+    const quizData = [
+      {
+        q: "1. Jak Niemcy poradzili sobie z potężną francuską Linią Maginota?",
+        opts: [
+          "Zniszczyli ją ciężką artylerią kolejową",
+          "Ominęli ją, wyprowadzając atak pancerny przez lasy Ardenów",
+          "Zmusili załogę do poddania się gazami bojowymi",
+          "Przekupili dowódców francuskich fortów"
+        ],
+        ans: 1,
+        exp: "Niemcy całkowicie ominęli fortyfikacje Linii Maginota, forsując czołgami góry Ardenów w Belgii i wychodząc na tyły aliantów."
+      },
+      {
+        q: "2. Kto stał na czele kolaboracyjnego Państwa Vichy?",
+        opts: [
+          "Gen. Charles de Gaulle",
+          "Marszałek Philippe Pétain",
+          "Léon Degrelle",
+          "Vidkun Quisling"
+        ],
+        ans: 1,
+        exp: "Na czele rządu Vichy stanął bohater I wojny światowej marszałek Philippe Pétain."
+      },
+      {
+        q: "3. Jaki był kluczowy wkład polskich sił w bitwę o Anglię i obronę wysp?",
+        opts: [
+          "Dostarczenie myśliwców Spitfire do RAF",
+          "Zestrzelenie ok. 170 maszyn przez dywizjony (m.in. 303) oraz złamanie szyfru Enigmy",
+          "Ewakuacja króla Jerzego VI do Warszawy",
+          "Dowodzenie całością lotnictwa myśliwskiego Royal Air Force"
+        ],
+        ans: 1,
+        exp: "Polscy piloci (Dywizjon 302 i 303) wykazali się ogromną skutecznością, a polscy kryptolodzy umożliwili odczytywanie niemieckich depesz Enigmy."
+      },
+      {
+        q: "4. Jaki kryptonim nosił niemiecki plan ataku na ZSRS z 22 czerwca 1941 r.?",
+        opts: ["Lew Morski", "Barbarossa", "Cytadela", "Fall Weiss"],
+        ans: 1,
+        exp: "Operacja nosiła kryptonim 'Barbarossa' na cześć średniowiecznego cesarza Fryderyka I Barbarossy."
+      },
+      {
+        q: "5. Czym była 'droga życia' podczas blokady Leningradu?",
+        opts: [
+          "Podziemnym tunelem kolejowym",
+          "Szlakiem konwojów ciężarówek po lodzie jeziora Ładoga",
+          "Mostem powietrznym organizowanym przez USA",
+          "Tajną leśną ścieżką partyzantów"
+        ],
+        ans: 1,
+        exp: "Zimą zaopatrzenie docierało do głodującego Leningradu po zamarzniętej tafli jeziora Ładoga pod nieustannym niemieckim ostrzałem."
+      },
+      {
+        q: "6. Jaka bitwa stoczona latem 1943 r. była największą bitwą pancerną w historii?",
+        opts: [
+          "Bitwa pod Stalingradem",
+          "Bitwa pod Moskwą",
+          "Bitwa na Łuku Kurskim",
+          "Bitwa pod Narwikiem"
+        ],
+        ans: 2,
+        exp: "Bitwa na Łuku Kurskim (lipiec–sierpień 1943) była gigantycznym starciem czołgów, które ostatecznie odebrało III Rzeszy siły zaczepne."
+      },
+      {
+        q: "7. Czym był amerykański program Lend-Lease Act z marca 1941 r.?",
+        opts: [
+          "Wypowiedzeniem wojny III Rzeszy przez USA",
+          "Ustawą o bezgotówkowym pożyczaniu i dostarczaniu uzbrojenia aliantom",
+          "Planem przymusowego poboru do armii amerykańskiej",
+          "Porozumieniem o podziale wpływów na Pacyfiku"
+        ],
+        ans: 1,
+        exp: "Lend-Lease Act pozwolił Stanom Zjednoczonym wspierać sprzętem, amunicją i surowcami kraje walczące z państwami Osi bez formalnego przystąpienia do wojny."
+      },
+      {
+        q: "8. Jakie państwo skapitulowało w pierwszym dniu niemieckiego ataku 9 kwietnia 1940 r.?",
+        opts: ["Norwegia", "Holandia", "Dania", "Belgia"],
+        ans: 2,
+        exp: "Dania złożyła broń 9 kwietnia 1940 r. niemal bez walki i została przekształcona w niemiecki protektorat."
+      },
+      {
+        q: "9. Jak nazywali się chorwaccy faszyści odpowiedzialni za ludobójstwo w Niezależnym Państwie Chorwackim?",
+        opts: ["Czetnicy", "Ustasze", "Reksiści", "Czarnokoszule"],
+        ans: 1,
+        exp: "Ustasze to zbrojne ugrupowanie chorwackich faszystów, którzy utworzyli marionetkowe państwo NDH."
+      },
+      {
+        q: "10. Jaki traktat podpisano 28 września 1939 r., korygując pakt Ribbentrop-Mołotow?",
+        opts: [
+          "Układ Sikorski-Majski",
+          "Niemiecko-sowiecki traktat o granicach i przyjaźni",
+          "Rozejm w Compiègne",
+          "Traktat w Moskwie kończący wojnę zimową"
+        ],
+        ans: 1,
+        exp: "Na mocy traktatu o granicach i przyjaźni ZSRS przekazał Niemcom Lubelszczyznę w zamian za przesunięcie Litwy do strefy sowieckiej."
+      }
+    ];
+
+    let quizScore = 0;
+    let answeredQuestions = new Set();
+
+    function renderQuiz() {
+      const cont = document.getElementById('quiz-container');
+      cont.innerHTML = '';
+      quizData.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.innerHTML = `
+          <div class="quiz-question">${item.q}</div>
+          <div class="quiz-options">
+            ${item.opts.map((opt, optIdx) => `
+              <button class="quiz-opt-btn" onclick="checkAnswer(${idx}, ${optIdx}, this)">${opt}</button>
+            `).join('')}
+          </div>
+          <div class="quiz-explanation" id="exp-${idx}">💡 <strong>Wyjaśnienie:</strong> ${item.exp}</div>
+        `;
+        cont.appendChild(card);
+      });
+    }
+
+    function checkAnswer(qIdx, optIdx, btn) {
+      if (answeredQuestions.has(qIdx)) return;
+      answeredQuestions.add(qIdx);
+
+      const q = quizData[qIdx];
+      const parent = btn.parentElement;
+      const buttons = parent.querySelectorAll('.quiz-opt-btn');
+
+      buttons.forEach(b => b.disabled = true);
+
+      if (optIdx === q.ans) {
+        btn.classList.add('correct');
+        quizScore++;
+      } else {
+        btn.classList.add('wrong');
+        buttons[q.ans].classList.add('correct');
+      }
+
+      document.getElementById(`exp-${qIdx}`).style.display = 'block';
+      document.getElementById('quiz-score').textContent = `Wynik: ${quizScore} / ${quizData.length}`;
+    }
+
+    // INIT
+    initFlashcards();
+    renderQuiz();
+  </script>
+</body>
+</html>
