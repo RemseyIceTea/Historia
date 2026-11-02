@@ -1,124 +1,78 @@
-# 📚 Historia – II Wojna Światowa (1939–1943)
-> **Skondensowana i treściwa notatka na sprawdzian** przygotowana na podstawie podręcznika, ze szczególnym uwzględnieniem **podkreśleń** i **dopisków ołówkiem**.
+# 📚 Historia – II Wojna Światowa (Tylko materiał z podręcznika)
+> Notatka przygotowana **wyłącznie** na podstawie załączonych stron podręcznika, ze **szczególnym skupieniem na elementach dopisanych ołówkiem, podkreślonych i zaznaczonych**.
 
-👉 **Wersja interaktywna (Fiszki + Quiz + Wyszukiwarka):** Otwórz plik `index.html` w przeglądarce (np. ZEN) lub uruchom przez GitHub Pages!
-
----
-
-## 📑 Spis treści
-1. [Pakt Ribbentrop-Mołotow i współpraca ZSRS z III Rzeszą](#1-pakt-ribbentrop-mołotow-i-współpraca-zsrs-z-iii-rzeszą)
-2. [Wojna zimowa z Finlandią (1939–1940)](#2-wojna-zimowa-z-finlandią-19391940)
-3. [Kampania skandynawska (Dania i Norwegia)](#3-kampania-skandynawska-dania-i-norwegia)
-4. [Podbój Beneluksu i Francji (1940)](#4-podbój-beneluksu-i-francji-1940)
-5. [Bitwa o Anglię i pomoc USA (1940–1941)](#5-bitwa-o-anglię-i-pomoc-usa-19401941)
-6. [Wojna na Bałkanach (Grecja i Jugosławia, 1940–1941)](#6-wojna-na-bałkanach-grecja-i-jugosławia-19401941)
-7. [Front wschodni – Napaść na ZSRS (1941–1943)](#7-front-wschodni--napaść-na-zsrs-19411943)
-8. [Słowniczek pojęć i postaci (Pewniaki ze sprawdzianu)](#8-słowniczek-pojęć-i-postaci)
+👉 **Wersja interaktywna:** Otwórz plik `index.html` w przeglądarce ZEN lub przejdź do wersji [GitHub Pages](https://remseyicetea.github.io/Historia/).
 
 ---
 
-## 1. Pakt Ribbentrop-Mołotow i współpraca ZSRS z III Rzeszą
-* **23 sierpnia 1939 r.** – podpisanie układu o nieagresji z **tajnym protokołem**:
-  * Podział stref wpływów: ZSRS – Finlandia, Estonia, Łotwa oraz Besarabia; III Rzesza – Litwa.
-  * Granica podziału Polski biegła wzdłuż linii rzek: **Narew – Wisła – San**.
-* **28 września 1939 r.** – **niemiecko-sowiecki traktat o granicach i przyjaźni** (korekta granic):
-  * ZSRS zrezygnował z Lubelszczyzny i wschodniego Mazowsza (Suwalszczyzny) na rzecz Niemiec.
-  * W zamian do sowieckiej strefy wpływów przeszła **Litwa**.
-  * Współpraca gospodarcza: ZSRS głównym dostawcą ropy, zboża i surowców dla Rzeszy.
-  * Współpraca **NKWD i Gestapo** w zwalczaniu polskiego podziemia.
-* **Czerwiec – sierpień 1940 r.** – aneksje sowieckie:
-  * ZSRS bez walki zajął i wcielił **Litwę, Łotwę i Estonię** (jako republiki związkowe).
-  * ZSRS wymusił na Rumunii oddanie **Besarabii i północnej Bukowiny**.
+## ✏️ I. RZECZY DOPISANE I ZAZNACZONE OŁÓWKIEM (NAJWYŻSZY PRIORYTET)
+
+1. ✏️ **Linia Maginota *(napisane ołówkiem na górze s. 248)***  
+   * **Co to było:** Potężny francuski system fortyfikacji granicznych z Niemcami.  
+   * **Co się z nią stało:** Niemieckie siły pancerne całkowicie ją **ominęły**, przechodząc przez górzyste lasy Ardenów i wychodząc na tyły wojsk alianckich.
+
+2. ✏️ **Bitwa na Łuku Kurskim *(napisane ołówkiem na dole s. 261)***  
+   * Dopisane przy podsumowaniu klęski pod Stalingradem jako kolejne kluczowe starcie na froncie wschodnim.
+
+3. ✏️ **(Państwa Vichy) *(zakreślone w kółko na s. 248)***  
+   * **Czym było:** Autorytarne Państwo Francuskie ze stolicą w Vichy na południu kraju, całkowicie podporządkowane III Rzeszy.  
+   * **Kto stał na czele:** Marszałek **Philippe Pétain**.
+
+4. ✏️ **(Państwo Chorwackie) i Ustasze *(zakreślone w kółko i podkreślone na s. 254)***  
+   * **Państwo:** Niezależne Państwo Chorwackie utworzone przez Niemców po podboju Jugosławii.  
+   * **Ustasze:** Chorwaccy faszyści stojący na czele tego państwa, odpowiedzialni za zbrodnie na ludności serbskiej i żydowskiej.
+
+5. ✏️ **Vidkun Quisling *(zaznaczony ołówkiem na marginesie s. 247 i 248)***  
+   * Przywódca norweskich faszystów; po ucieczce rządu i króla stanął na czele marionetkowego rządu współpracującego z Niemcami. Stał się międzynarodowym symbolem **zdrady i kolaboracji**.
+
+6. ✏️ **Carl Gustaf Mannerheim *(zaznaczony ołówkiem na marginesie s. 246 i 247)***  
+   * Marszałek Finlandii, polityk; inicjator budowy Linii Mannerheima. Dowodził obroną Finlandii podczas wojny zimowej z ZSRS.
+
+7. ✏️ **Winston Churchill *(obwiedziony ramką ołówkową na s. 251)***  
+   * Brytyjski mąż stanu, premier WB od 1940 r., przeciwnik ugody z Hitlerem. Filar koalicji antyhitlerowskiej. Słynne słowa: *„Będziemy bronić naszej wyspy bez względu na koszty [...] nigdy się nie poddamy”* oraz o pilotach: *„Nigdy w historii wojen tak wielu nie zawdzięczało tak wiele tak niewielu”*.
+
+8. ✏️ **Lend-Lease Act *(zaznaczony ołówkiem na s. 251)***  
+   * Ustawa amerykańskiego Kongresu z **marca 1941 r.**, która umożliwiła udzielanie wsparcia materiałowego krajom walczącym z Niemcami (pozwoliła Wielkiej Brytanii przetrwać).
+
+9. ✏️ **Blokada Leningradu i „Droga życia” *(zaznaczone ołówkiem i podkreślone na s. 261)***  
+   * **900 dni oblężenia** miasta przez Niemców (zakończone 18 stycznia 1944 r.); blisko 1 mln ofiar śmiertelnych z głodu.  
+   * **„Droga życia”:** Szlak po zamarzniętym jeziorze Ładoga, którym ciężarówkami pod ostrzałem dowożono żywność i ewakuowano ludność.
+
+10. ✏️ **Josip Broz-Tito *(zaznaczony ołówkiem na s. 254)***  
+    * Dowódca komunistycznej partyzantki w podbitej Jugosławii; zyskał przewagę nad serbskimi czetnikami i poparcie aliantów.
 
 ---
 
-## 2. Wojna zimowa z Finlandią (1939–1940)
-* **30 listopada 1939 r. – 13 marca 1940 r.** – agresja ZSRS na Finlandię po odrzuceniu żądań cesji terytorialnych (Przesmyk Karelski, baza Hanko).
-* **Carl Gustaf Mannerheim** – marszałek Finlandii, sprawny dowódca obrony fińskiej; twórca **Linii Mannerheima** (pasa umocnień na Przesmyku Karelskim).
-* **Taktyka Finów:** Znakomite wyszkolenie w warunkach polarnych, kamuflaż zimowy, mobilni narciarze i strzelcy wyborowi („Śmierć w śniegu”).
-* **Skutki wojny zimowej:**
-  * Traktat w Moskwie (13 III 1940): Finlandia straciła ponad 10% terytorium (m.in. Wyborg) i Linię Mannerheima, ale **obroniła niepodległość**.
-  * ZSRS został **wykluczony z Ligi Narodów**.
-  * Obnażenie słabości i nieudolności Armii Czerwonej (skutek krwawych czystek oficerskich Stalina z lat 30.).
+## 🔍 II. POJĘCIA I DATY PODKREŚLONE W PODRĘCZNIKU
+
+* **23 sierpnia 1939 r. – Pakt Ribbentrop-Mołotow:** Układ o nieagresji z tajnym protokołem dzielącym terytorium Polski wzdłuż linii rzek **Narew – Wisła – San**.
+* **28 września 1939 r. – Niemiecko-sowiecki traktat o granicach i przyjaźni:** Korekta podziału ziem polskich (ZSRS oddał Lubelszczyznę i Suwalszczyznę w zamian za **Litwę**).
+* **30 listopada 1939 r. – Wojna zimowa:** Atak ZSRS na Finlandię po odrzuceniu przez Finów żądań terytorialnych na Przesmyku Karelskim.
+* **9 kwietnia 1940 r. – Atak na Danię i Norwegię:** Niemieckie uderzenie w celu zdobycia portów i szwedzkiej rudy żelaza. Dania poddała się pierwszego dnia.
+* **Alianci:** Określenie na sojusz państw zachodnich walczących w czasie II wojny światowej z III Rzeszą.
+* **Narwik:** Strategiczny port w Norwegii; w walkach o niego wsławiła się polska **Samodzielna Brygada Strzelców Podhalańskich**.
+* **10 maja 1940 r.:** Atak Niemiec na neutralne kraje Beneluksu (**Belgię, Holandię, Luksemburg**) oraz Francję.
+* **22 czerwca 1940 r. – Rozejm w Compiègne:** Marszałek Philippe Pétain podpisał zawieszenie broni w tym samym wagonie, w którym Niemcy kapitulowali w 1918 r.
+* **Gen. Charles de Gaulle:** Stał w Londynie na czele emigracyjnego **Komitetu Wolna Francja**, kontynuując walkę z Niemcami.
+* **Léon Degrelle:** Przywódca faszystów w Belgii, symbol zdrady i kolaboracji (wstąpił do Waffen-SS).
+* **Bitwa o Anglię (lipiec – październik 1940 r.):** Walki powietrzne zakończone **klęską Luftwaffe** (pierwsza znacząca porażka III Rzeszy).
+  * **Dlaczego Brytyjczycy wygrali:**
+    1. **Radar** – wynalazek do wykrywania nadlatujących samolotów.
+    2. **Zaangażowanie pilotów z innych krajów (m.in. Polaków z Dywizjonów 302 i 303)** – zestrzelili blisko 170 samolotów.
+    3. **Rozszyfrowanie Enigmy** – zasługa polskich matematyków.
+* **Kwiecień 1941 r. – Wojna na Bałkanach:** Podbój **Jugosławii i Grecji** przez Niemcy (skutek: odsunięcie w czasie ataku na ZSRS).
+* **Lebensraum („przestrzeń życiowa”):** Cel Hitlera na wschodzie przedstawiony w *Mein Kampf*.
+* **22 czerwca 1941 r. – Operacja „Barbarossa”:** Atak Niemiec na ZSRS; Hitler świadomie rozpoczął **wojnę na dwa fronty**. Armia Czerwona była zaskoczona i nieprzygotowana.
+* **2 lutego 1943 r. – Kapitulacja pod Stalingradem:** Dowódca Friedrich Paulus poddał się z 90 tys. żołnierzy. Klęska stalingradzka to zwiastun przegranej Hitlera i punkt zwrotny wojny.
 
 ---
 
-## 3. Kampania skandynawska (Dania i Norwegia)
-* **9 kwietnia 1940 r.** – uderzenie Niemiec na Danię i Norwegię.
-  * **Cel Hitlera:** Zabezpieczenie dostaw szwedzkiej rudy żelaza (przez Narwik) oraz zdobycie baz morskich do ataku na Wielką Brytanię.
-* **Dania** – poddała się pierwszego dnia bez oporu, przekształcona w protektorat.
-* **Norwegia** – stawiła opór z pomocą **aliantów** (Brytyjczycy, Francuzi, Polacy).
-  * **Bitwa o Narwik (1940)** – strategiczny port; wsławiła się polska **Samodzielna Brygada Strzelców Podhalańskich**.
-* **Vidkun Quisling** – przywódca norweskich faszystów, stanął na czele marionetkowego rządu u boku Hitlera; uniwersalny symbol **zdrady i kolaboracji**.
+## 📖 III. POZOSTAŁE FAKTY Z TEKSTU I MAP NA ZDJĘCIACH
 
----
-
-## 4. Podbój Beneluksu i Francji (1940)
-* **10 maja 1940 r.** – atak Niemiec na neutralne państwa Beneluksu (**Belgię, Holandię, Luksemburg**) i **Francję**.
-* ✏️ **Linia Maginota *(dopisane ołówkiem!)*** – potężny francuski system fortyfikacji granicznych z Niemcami. Niemcy **ominęli te umocnienia**, wyprowadzając niespodziewane uderzenie pancerne przez górzyste lasy **Ardenów**.
-* **Dunkierka (operacja Dynamo)** – ewakuacja drogą morską ponad 300 tys. żołnierzy alianckich na Wyspy Brytyjskie (porzucenie ciężkiego sprzętu).
-* **22 czerwca 1940 r. – rozejm w Compiègne**:
-  * Podpisany w tym samym wagonie kolejowym, co klęska Niemiec w 1918 r. (symboliczny rewanż Hitlera).
-* **Podział Francji:**
-  * Północna Francja i wybrzeże Atlantyku – pod bezpośrednią okupacją niemiecką.
-  * Południe – marionetkowe, autorytarne **Państwo Vichy** z kolaboracyjnym rządem na czele z marszałkiem **Philippe’em Pétainem**.
-  * **Komitet Wolna Francja** – powołany w Londynie przez **gen. Charles’a de Gaulle’a**, kontynuujący walkę z Rzeszą u boku aliantów.
-* **Léon Degrelle** – lider belgijskich faszystów (reksistów), oficer Waffen-SS, symbol kolaboracji w Belgii.
-
----
-
-## 5. Bitwa o Anglię i pomoc USA (1940–1941)
-* **Lipiec – październik 1940 r.** – bitwa o Anglię; pierwsza w historii **bitwa powietrzna**.
-  * Zakończona **klęską Luftwaffe**; zmusiła Hitlera do zaniechania planu inwazji morskiej na Wyspy Brytyjskie.
-* **Winston Churchill** – nowy brytyjski premier; bezkompromisowy wobec Hitlera (*„Będziemy walczyć na plażach... nigdy się nie poddamy”*).
-* **Dlaczego Brytyjczycy (RAF) wygrali?**
-  1. **Radar** – wynalazek wykrywający z wyprzedzeniem niemieckie wyprawy bombowe.
-  2. **Piloci zagraniczni** – w tym polskie dywizjony **302 i 303** (Polacy zestrzelili blisko 170 maszyn wroga).
-  3. **Złamanie Enigmy** – zasługa polskich matematyków; pozwoliło aliantom czytać niemieckie depesze.
-* **Lend-Lease Act (marzec 1941 r.)** – ustawa Kongresu USA umożliwiająca bezgotówkowe pożyczanie i przekazywanie sprzętu wojskowego oraz surowców państwom walczącym z państwami Osi.
-
----
-
-## 6. Wojna na Bałkanach (Grecja i Jugosławia, 1940–1941)
-* **Jesień 1940 r.** – nieudana agresja faszystowskich Włoch (Mussoliniego) na Grecję; klęska Włoch zmusza Hitlera do interwencji.
-* **Kwiecień 1941 r.** – atak Niemiec i ich satelitów (Węgry, Rumunia, Bułgaria) na **Grecję i Jugosławię**.
-  * **Kluczowy skutek:** Opóźnienie niemieckiego ataku na ZSRS z maja na koniec czerwca 1941 r. (Wehrmachtu dopadła później zima pod Moskwą).
-* **Rozbicie Jugosławii:**
-  * Utworzenie marionetkowego **Niezależnego Państwa Chorwackiego (NDH)** rządzonego przez zbrodniczych faszystów – **ustaszy**.
-* **Dwa odłamy partyzantki w Jugosławii:**
-  * **Czetnicy** – serbscy nacjonaliści i rojaliści (zwolennicy króla).
-  * **Komuniści** – pod dowództwem **Josipa Broz-Tito**; zyskali przewagę i szerokie poparcie aliantów.
-
----
-
-## 7. Front wschodni – Napaść na ZSRS (1941–1943)
-* **Lebensraum** – hitlerowska koncepcja zdobycia „przestrzeni życiowej” na wschodzie.
-* **Plan „Barbarossa” (22 czerwca 1941 r.)** – atak Niemiec i sojuszników na ZSRS.
-  * Błąd Hitlera: świadome rozpoczęcie **wojny na dwa fronty**.
-  * Początkowo gigantyczne sukcesy Niemiec (do niewoli trafiło ok. 3,5 mln zaskoczonych żołnierzy Armii Czerwonej).
-* **Najważniejsze bitwy i punkty zwrotne:**
-  * **Obrona Moskwy (kontrofensywa ZSRS 6 XII 1941 r.)** – pierwsze zatrzymanie Blitzkriegu.
-  * **Blokada Leningradu (IX 1941 – I 1944 r.)** – oblężenie trwało blisko **900 dni**; śmierć głodowa ok. 1 mln cywilów. Jedynym szlakiem zaopatrzeniowym była **„droga życia”** przez zamarznięte jezioro Ładoga.
-  * **Bitwa o Stalingrad (23 VIII 1942 – 2 II 1943 r.)** – okrążenie i kapitulacja niemieckiej 6. Armii feldmarszałka Paulusa. **Przełomowy punkt zwrotny II wojny światowej**.
-  * ✏️ **Bitwa na Łuku Kurskim (VII–VIII 1943 r.) *(dopisane ołówkiem!)*** – największa bitwa pancerna w dziejach świata; ostateczne załamanie niemieckiej ofensywy na wschodzie.
-
----
-
-## 8. Słowniczek pojęć i postaci (Szybka powtórka)
-
-| Pojęcie / Postać | Co to jest / Kto to jest? |
-| :--- | :--- |
-| **Linia Maginota** ✏️ | Francuski potężny system umocnień; Niemcy pominęli go, atakując przez Ardeny. |
-| **Bitwa na Łuku Kurskim** ✏️ | Największa bitwa pancerna w historii (1943); ostateczny koniec ofensyw III Rzeszy. |
-| **Vidkun Quisling** | Norweski faszysta i kolaborant; symbol zdrady narodowej. |
-| **Léon Degrelle** | Przywódca belgijskich faszystów (reksistów), oficer Waffen-SS. |
-| **Philippe Pétain** | Marszałek Francji stojący na czele kolaboracyjnego rządu Państwa Vichy. |
-| **Charles de Gaulle** | Generał francuski, twórca Komitetu Wolna Francja w Londynie. |
-| **Carl Gustaf Mannerheim** | Marszałek Finlandii, architekt obrony w wojnie zimowej (Linia Mannerheima). |
-| **Josip Broz-Tito** | Przywódca wielonarodowej komunistycznej partyzantki w Jugosławii. |
-| **Ustasze** | Chorwaccy faszyści w Niezależnym Państwie Chorwackim, odpowiedzialni za ludobójstwo. |
-| **Czetnicy** | Serbska partyzantka nacjonalistyczna i monarchistyczna w Jugosławii. |
-| **Alianci** | Koalicja państw walczących z państwami Osi. |
-| **Lend-Lease Act** | Ustawa Kongresu USA o pomocy materiałowej i militarnej dla aliantów (marzec 1941). |
-| **„Droga życia”** | Zimowy szlak zaopatrzeniowy przez jezioro Ładoga do oblężonego Leningradu. |
-| **Lebensraum** | „Przestrzeń życiowa” na wschodzie – cel ataku Hitlera na ZSRS. |
+* **Współpraca gospodarcza i służb:** ZSRS dostarczał Niemcom surowce (70% importu Rzeszy w 1941 r.), a NKWD i Gestapo współpracowały w zwalczaniu polskiego podziemia.
+* **Czystki Stalina:** Skutkiem wymordowania kadry dowódczej w armii ZSRS pod koniec lat 30. była kompromitująca postawa Armii Czerwonej w wojnie zimowej.
+* **Ewakuacja z Dunkierki:** Ewakuacja wojsk brytyjskich na Wyspy z pozostawieniem ciężkiego sprzętu.
+* **Wagon z Compiègne:** Sprowadzony z muzeum przez Hitlera, by wziąć rewanż za klęskę Niemiec z 1918 r.
+* **Czetnicy:** Serbscy nacjonaliści i zwolennicy króla w Jugosławii walczący z Niemcami, ustaszami i komunistami Tito.
+* **Blokada morska Anglii:** Niemieckie okręty podwodne zatapiały statki płynące z zaopatrzeniem do portów brytyjskich.
+* **Bitwa pod Moskwą (6 XII 1941 r.):** Kontrofensywa ZSRS, która powstrzymała niemiecki marsz na stolicę.
